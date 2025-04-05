@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+console.log('Clerk Key:', process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY)
+
 export default function Home() {
   return (
     <div className='bg-gradient-to-r from-bg to-black flex gap-10 w-full justify-between items-center'>
