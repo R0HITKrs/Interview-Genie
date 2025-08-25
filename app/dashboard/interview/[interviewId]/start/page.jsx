@@ -51,7 +51,7 @@ function StartInterview({params}) {
         {activeQuestion != mockInterviewQuestion?.length-1&& <Button className='cursor-pointer' onClick={()=>{setActiveQuestion(activeQuestion+1)}}>Next Question</Button>}
         {activeQuestion == mockInterviewQuestion?.length-1&& 
             <Link href={'/dashboard/interview/'+interviewData?.mockId+'/feedback'}>
-                <Button className='cursor-pointer' onClick={setRedirecting(true)}>
+                <Button className='cursor-pointer' onClick={() => setRedirecting(true)}>
                     {redirecting ? (
                         <span className="flex items-center gap-2">
                             <Loader2 className="h-4 w-4 animate-spin" />

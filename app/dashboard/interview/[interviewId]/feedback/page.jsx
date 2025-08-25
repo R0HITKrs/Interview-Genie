@@ -98,7 +98,7 @@ function Feedback({ params }) {
   const { interviewId } = use(params);
   const [feedbackList, setFeedbackList] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [listLoading, setListLoading] = useState(true); // 👈 for collapsible
+  const [listLoading, setListLoading] = useState(true); 
 
   useEffect(() => {
     GetFeedback();

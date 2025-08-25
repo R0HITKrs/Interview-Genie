@@ -73,13 +73,13 @@ function AddNewInterview() {
         >
             <h2 className='text-lg'>+ Add New</h2>
         </div>
-        <Dialog open={opendialog}>
+        <Dialog open={opendialog} onOpenChange={setOpenDialog}>
             <DialogContent className='max-w-xl'>
                 <DialogHeader>
                 <DialogTitle className='font-bold text-2xl'>Tell us more about your interview.</DialogTitle>
                 <DialogDescription>
                     <form onSubmit={onSubmit}>
-                        <div className=''>
+                        <div>
                             <h2>Add details about your job position, job description and year of experience.</h2>
                             <div className=' mt-5 my-2 flex flex-col gap-1'>
                                 <label>Job Description</label>
