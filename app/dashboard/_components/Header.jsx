@@ -5,7 +5,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import React from 'react'
-
 const MenuOption=[
     {
         name: 'Dashboard',
@@ -41,7 +40,9 @@ function Header() {
             ))}
         </ul>
       </div>
-      <UserButton />
+      <div className="w-12 h-12 flex items-center justify-center">
+        <UserButton />
+      </div>
     </nav>
   )
 }
